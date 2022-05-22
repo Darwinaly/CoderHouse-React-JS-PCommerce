@@ -1,0 +1,54 @@
+.itemCount{
+    margin-top: 2px;
+    margin-left: 68px;
+    margin-block-end: 5px;
+    width: 150px;
+}
+
+
+
+.itemCountButtons {
+    border-color: black;
+    border-width: 2px;
+    display: flex;
+}
+
+.handlerAdd {
+    border: 0;
+    background-color: white;
+    width: 30px;
+    color: blue;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.handlerAdd:hover {
+    background-color: blue;
+    color: white;
+}
+
+.handlerSubtract {
+    border: 0;
+    background-color: white;
+    width: 30px;
+    color: blue;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.handlerSubtract:hover {
+    background-color: blue;
+    color: white;
+}
+
+.count {
+    border: 0;
+    background-color: white;
+    width: 90px;
+    text-align: center;
+}
+
+
+.nav li a:hover {
+    background-color:#434343;
+}
