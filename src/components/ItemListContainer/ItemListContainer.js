@@ -1,17 +1,22 @@
-import ItemCount from "../ItemCount/ItemCount";
+import { useState, useEffect } from "react";
+import ItemList from "../ItemList/ItemList";
+import {getProducts} from '../../asyncmock'
 
 
-function ItemListContainer (props){
-    
-    const onAdd = (count) => {
-        console.log('Add to cart');
-    };
+function ItemListContainer (){
+
+    const [products, setProducts] = useState([])
+
+    useEffect (() => {
+        getProducts().then(response => {
+            setProducts(response)
+        })
+    }, [])
+
+
 
     return (
-        <>
-        <h4>{props.mensaje}</h4>
-        <ItemCount stock={5} initial={1} onAdd={onAdd}/>
-        </>
+        <ItemList products={products}/>
     );
 }
 

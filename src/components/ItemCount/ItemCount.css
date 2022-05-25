@@ -1,8 +1,8 @@
 .itemCount{
-    margin-top: 2px;
-    margin-left: 68px;
-    margin-block-end: 5px;
+    margin-block-end: 10px;
+    margin-right: 20PX;
     width: 150px;
+    float: right;
 }
 
 

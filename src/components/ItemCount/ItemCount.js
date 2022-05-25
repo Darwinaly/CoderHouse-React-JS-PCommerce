@@ -22,9 +22,9 @@ function ItemCount ({stock, initial, onAdd}){
     return(
         <div className="itemCount" id="itemCount">
             <div className="itemCountButtons" id="itemCountButtons">
-                <button onClick={handlerAdd} className="handlerAdd" id="handlerAdd">+</button>
-                <div className="count" id="count"><span >{count}</span></div>
                 <button onClick={handlerSubtract} className="handlerSubtract" id="handlerSubtract">-</button>
+                <div className="count" id="count"><span >{count}</span></div>
+                <button onClick={handlerAdd} className="handlerAdd" id="handlerAdd">+</button>
             </div> 
             <button onClick={handlerAddToCart} type="button" className="btn btn-outline-primary">Agregar al carrito</button>
         </div>
