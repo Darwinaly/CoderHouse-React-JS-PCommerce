@@ -1,15 +1,14 @@
 
 .contenedorProducto{
-    float: left;
+    margin-left: 30%;
     display: block;
-    margin-top: 50px;
-    width: 45%;
-    margin-left: 10px;
-    box-shadow: 0 0 7px #444444;
+    margin-top: 30px;
+    width: 60%;
+    height: 200px;
 }
 
 .card-title{
-    margin: 5%;
+    padding-top: 15px;
     font-size: 24px;
     color: #5e5e5e;
     text-align: left;
@@ -23,8 +22,8 @@
 
 
 .card-img-top{
-    height: 250px;
-    width: auto;
+    height: 180px;
+    width: 180px;
     float: left;
     margin-right: 20px;
 }
