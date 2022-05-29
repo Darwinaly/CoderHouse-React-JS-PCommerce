@@ -5,28 +5,27 @@
 .ItemCount{grid-area: ItemCount;}
 
 
-.contenedorDescription{
-    margin-top: 100px;
-    border-color: black;
-    border-width: 1px;
-    border-style: groove;
+.contenedorDescription{ 
+    width: 1000px;
+    align-content: center;
+    margin: auto;
+    margin-top: 50px;
     display: grid;
     grid-template: "card-img-detail card-title-detail card-title-detail"
-                    "card-img-detail description-detail description-detail" 
-                    "card-img-detail price-detail price-detail"
-                    "card-img-detail ItemCount ItemCount"/
+                    "card-img-detail price-detail ItemCount" 
+                    "description-detail description-detail description-detail"/
                         40%   30% 30%;
 }
 
 .card-img-detail{
-    width: 500px;
+    width: 100%;
     align-content: center;
-    margin: auto;
+    padding-top: 50px;
 }
 
 
 .card-title-detail {
-    font-size: 50px;
+    font-size: 40px;
     padding: 40px;
     text-align: left;
 }
@@ -34,8 +33,9 @@
 
 .price-detail{
     font-size: 40px;
-    text-align: left;
-    padding: 40px;
+    text-align: center;
+    align-content: center;
+    margin: auto;
 }
 
 
@@ -46,5 +46,6 @@
 }
 
 .ItemCount{
-    padding-left: 40px;
+    align-content: center;
+    margin: auto;
 }

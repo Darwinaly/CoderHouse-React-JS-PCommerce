@@ -1,6 +1,7 @@
 import './NavBar.css';
 import Menu from '../Menu/Menu'
 import CartWidget from '../CartWidget/CartWidget';
+import {Link} from "react-router-dom"
 
 
 function NavBar () {
@@ -9,7 +10,7 @@ function NavBar () {
         <>
         <nav className="navbar navbar-custom">
             <div className="container-fluid align-items-right">
-                <h1 className="navTitle">PCommerce</h1>
+                <Link className="navTitle" to="/">PCommerce</Link>
                 <Menu/>
                 <form className="d-flex">
                     <input className="form-control me-2 float-rigt" type="search" placeholder="Buscar" aria-label="Search"/>

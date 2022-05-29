@@ -1,33 +1,58 @@
+.cardImage{grid-area: cardImage;}
+.card-title{grid-area: card-title;}
+.price{grid-area: price;}
+.verMas{grid-area: verMas;}
+
+
 
 .contenedorProducto{
     margin-left: 30%;
-    display: block;
     margin-top: 30px;
-    width: 60%;
+    width: 800px;
     height: 200px;
+    display: grid;
+    grid-template:  "cardImage card-title card-title"
+                    "cardImage card-title card-title" 
+                    "cardImage price verMas"/
+                        30%   35% 35%;
 }
 
+.cardImage{
+    align-content: center;
+    margin: auto;
+    float: left;
+    height: 150px;
+}
+
+
 .card-title{
-    padding-top: 15px;
-    font-size: 24px;
+    padding-top: 20px;
+    width: 95%;
+    font-size: 20px;
     color: #5e5e5e;
     text-align: left;
     font-family: Google Sans Display,Sans-Serif;
 }
 
 .price{
-    size: 12px;
+    font-size: 20px;
     text-align: left;
 }
 
 
-.card-img-top{
-    height: 180px;
-    width: 180px;
-    float: left;
-    margin-right: 20px;
-}
+.verMas{
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    height: 32px;
+    width: 90px;
+} 
 
-.ItemCount{
-    float: right;
-}
+.verMas:hover{
+    background-color: black; 
+    color: white;
+} 

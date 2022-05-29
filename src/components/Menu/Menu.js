@@ -1,28 +1,26 @@
 import '../NavBar/NavBar.css';
+import {Link, NavLink} from 'react-router-dom'
 
 function Menu () {
     return(
         <>
         <ul className="nav">
-			<li><a href="index.html">Procesadores</a>
+			<li><Link to="/category/Procesadores">Procesadores</Link>
 				<ul>
-					<li><a href="index.html">Intel</a></li>
-					<li><a href="index.html">Ryzen</a></li>
+					<li><Link to='/marca/Intel'>Intel</Link></li>
+					<li><Link to='/marca/Ryzen'>Ryzen</Link></li>
 				</ul>
 			</li>
-			<li><a href="index.html">Graficas</a>
+			<li><Link to="/category/TarjetaGrafica">Tarjetas Graficas</Link>
 				<ul>
-					<li><a href="index.html">3090</a></li>
-					<li><a href="index.html">3080</a></li>
-					<li><a href="index.html">1080</a></li>
-					<li><a href="index.html">Todas</a></li>
+					<li><Link to='/marca/Gigabyte'>Gigabyte</Link></li>
+					<li><Link to='/marca/Asus'>Asus</Link></li>
 				</ul>
 			</li>
-            <li><a href="index.html">PC Completas</a>
+            <li><Link to="/category/PCyNotebooks">PC y Notebooks</Link>
 				<ul>
-					<li><a href="index.html">Notebooks</a></li>
-					<li><a href="index.html">Gamer</a></li>
-					<li><a href="index.html">Diseño</a></li>
+					<li><Link to='/marca/MSI'>MSI</Link></li>
+					<li><Link to='/marca/Custom'>Custom</Link></li>
 				</ul>
 			</li>
 		</ul>
