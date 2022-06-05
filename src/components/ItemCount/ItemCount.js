@@ -15,6 +15,7 @@ function ItemCount ({stock, initial, onAdd}){
 
     const handlerAddToCart = () => {
         onAdd(count); 
+        console.log(count)
     }
 
 
