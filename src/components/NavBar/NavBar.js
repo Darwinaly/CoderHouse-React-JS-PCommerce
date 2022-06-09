@@ -16,7 +16,7 @@ function NavBar () {
                     <input className="form-control me-2 float-rigt" type="search" placeholder="Buscar" aria-label="Search"/>
                     <button className="btn btn-outline-light" type="submit">Buscar</button>
                 </form>
-                <CartWidget compras="5"/>
+                <CartWidget/>
             </div>
         </nav>
         </>

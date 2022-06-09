@@ -1,8 +1,15 @@
+import { useContext } from 'react';
+import CartContext from '../../context/CartContext'
 import logo from './addtocart.png';
 
-function CartWidget (props) {
+const CartWidget = () => {
+
+    const {getQuantity} = useContext(CartContext)
+    
+    const quantity = getQuantity()
+
     return(
-        <button type="button" className="btn btn-dark"><img src={logo} alt="add to cart"/>{props.compras}</button>
+        <button type="button" className="btn btn-dark"><img src={logo} alt="add to cart"/> {quantity} </button>
     )
 }
 
