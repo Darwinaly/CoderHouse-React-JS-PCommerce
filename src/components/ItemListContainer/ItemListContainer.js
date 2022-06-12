@@ -1,36 +1,51 @@
 import { useState, useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
-import {getProducts} from '../../asyncmock'
 import { useParams } from 'react-router-dom'
-import {getProductsByCategory, getProductsByMarca} from '../../asyncmock'
+import { getDocs, collection, query, where } from 'firebase/firestore'
+import { db } from '../../services/firebase'
 
 
-function ItemListContainer (){
+
+const ItemListContainer = ({greeting}) => {
 
     const [products, setProducts] = useState([])
-
+    const [loading, setLoading] = useState(true)
     const {categoryId} = useParams()
-    const {marcaId} = useParams()
+    // const {marcaId} = useParams()
+
 
     useEffect (() => {
-        if (!categoryId && !marcaId) {
-            getProducts(categoryId).then(response => {
-                setProducts(response)
-            })
-        }else if (!marcaId){
-            getProductsByCategory(categoryId).then(response => {
-                setProducts(response)
-            })
-        }else {
-            getProductsByMarca(marcaId).then(response => {
-                setProducts(response)
-            })
-        }
-    }, [categoryId, marcaId])
+        setLoading(true)
 
+        const collectionRef = categoryId
+            ? query(collection(db, 'products'), where('category', '==', categoryId))
+            : collection(db, 'products')
+
+        getDocs(collectionRef).then(response => {
+            const products = response.docs.map(doc => {
+                return { id: doc.id, ...doc.data()}
+            })
+            setProducts(products)
+        }).catch(error => {
+            console.log(error)
+        }).finally(()=>{
+            setLoading(false)
+        })
+    }, [categoryId])
+
+    if(loading) {
+        return <h3>Loading...</h3>
+    }
 
     return (
-        <ItemList products={products}/>
+        <>
+        <h1>{greeting}</h1>
+        {
+            products.length > 0
+            ? <ItemList products={products}/>
+            : <h2>No hay productos</h2>
+        }
+        </>
     );
 }
 

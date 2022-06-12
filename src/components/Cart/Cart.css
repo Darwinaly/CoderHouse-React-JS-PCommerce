@@ -1,0 +1,28 @@
+.total{grid-area: total;}
+.buttonClearCart{grid-area: buttonClearCart;}
+.buttonGenerarOrden{grid-area: buttonGenerarOrden;}
+
+.tarjetaTotal{
+    width: 70%;
+    height: 90px;
+    margin: 30px;
+    align-items: center;
+    display: grid;
+    grid-template:  "total buttonClearCart"
+                    "total buttonGenerarOrden"/
+                    80% 20%;
+}
+
+.total{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.mensajeCartVacio{
+    margin-top: 20px;
+    margin-left: 25%;
+    text-align: center;
+    width: 50%;
+
+}

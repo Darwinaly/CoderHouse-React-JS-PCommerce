@@ -1,0 +1,64 @@
+.cardTitulo{grid-area: cardTitulo;}
+.button{grid-area: button;}
+.cardInfoItems{grid-area: cardInfoItems;}
+.cardInfoPrecio{grid-area: cardInfoPrecio;}
+.cardInfoSubtotal{grid-area:cardInfoSubtotal}
+
+
+.cardCarrito{
+    width: 70%;
+    margin: 30px;
+    align-items: center;
+    display: grid;
+    grid-template:  "cardTitulo button"
+                    "cardTitulo cardInfoItems"
+                    "cardTitulo cardInfoPrecio"
+                    "cardTitulo cardInfoSubtotal"/
+                       70% 30%;
+}
+
+
+.cardTituloNombre{
+    border: none;
+    font-family: Google Sans Display,Sans-Serif;
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.button{
+    display: inline-block;
+    text-align: right;
+    padding: 2px;
+}
+
+.cardInfo{
+    text-align: center;
+}
+
+.cardInfoSubtotal{
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    width: 90%;
+    padding-left: 5%;
+}
+
+.buttonclose{
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-color: red;
+    border-width: 1px;
+    color: red;
+}
+
+.buttonclose:hover{
+    background-color: red;
+    border-color: white;
+    border-width: 1px;
+    color: white;
+}

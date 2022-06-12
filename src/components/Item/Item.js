@@ -1,8 +1,8 @@
 import './Item.css'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
-const Item = ({id, name, price, img, stock}) => {
+const Item = ({id, name, price, img}) => {
 
     return(
         <div className="contenedorProducto card">

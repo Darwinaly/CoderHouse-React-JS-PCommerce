@@ -1,10 +1,16 @@
-import './NavBar.css';
-import Menu from '../Menu/Menu'
+import { useContext } from 'react'
 import CartWidget from '../CartWidget/CartWidget';
+import './NavBar.css';
 import {Link} from "react-router-dom"
+import CartContext from '../../context/CartContext';
+import Menu from '../Menu/Menu'
 
 
-function NavBar () {
+const NavBar = () => {
+
+    const { getQuantity } = useContext(CartContext)
+
+    const quantity = getQuantity()
 
     return(
         <>
@@ -16,7 +22,7 @@ function NavBar () {
                     <input className="form-control me-2 float-rigt" type="search" placeholder="Buscar" aria-label="Search"/>
                     <button className="btn btn-outline-light" type="submit">Buscar</button>
                 </form>
-                <CartWidget/>
+                {quantity > 0 && <CartWidget/>}
             </div>
         </nav>
         </>

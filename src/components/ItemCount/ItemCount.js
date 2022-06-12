@@ -1,36 +1,34 @@
 import {useState} from "react";
 import "./ItemCount.css"
 
-function ItemCount ({stock, initial, onAdd}){
+const ItemCount = ({stock = 0, initial = 1, onAdd}) => {
 
-    const [count, setCount] = useState(initial);
+
+    const [quantity, setQuantity] = useState(initial);
+
 
     const handlerAdd = () => {
-        if (count < stock) setCount (count + 1);
+        if (quantity < stock) setQuantity (quantity + 1);
     }
 
     const  handlerSubtract = () => {
-        if (count > 0) setCount(count -1);
+        if (quantity > 1) setQuantity(quantity -1);
     }
-
-    const handlerAddToCart = () => {
-        onAdd(count); 
-        console.log(count)
-    }
-
 
 
     return(
         <div className="itemCount" id="itemCount">
             <div className="itemCountButtons" id="itemCountButtons">
                 <button onClick={handlerSubtract} className="handlerSubtract" id="handlerSubtract">-</button>
-                <div className="count" id="count"><span >{count}</span></div>
+                <div className="count" id="count">{quantity}</div>
                 <button onClick={handlerAdd} className="handlerAdd" id="handlerAdd">+</button>
             </div> 
-            <button onClick={handlerAddToCart} type="button" className="btn btn-outline-primary">Agregar al carrito</button>
+            <button onClick={() => onAdd(quantity)} type="button" className="btn btn-outline-primary">Agregar al carrito</button>
         </div>
     );
 
 }
 
 export default ItemCount
+
+// quantity estaba abrazado por la etiqueta span anteriormente

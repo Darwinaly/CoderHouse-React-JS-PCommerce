@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import { Link } from 'react-router-dom'
 import CartContext from '../../context/CartContext'
 import logo from './addtocart.png';
 
@@ -9,8 +10,13 @@ const CartWidget = () => {
     const quantity = getQuantity()
 
     return(
-        <button type="button" className="btn btn-dark"><img src={logo} alt="add to cart"/> {quantity} </button>
+        <Link to='/cart' className="btn btn-dark">
+            <img src={logo} alt='add to cart'/>
+            { quantity }
+        </Link>
     )
 }
 
 export default CartWidget;
+
+//       <button type="button" className="btn btn-dark"><img src={logo} alt="add to cart"/> {quantity} </button>
