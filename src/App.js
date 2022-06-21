@@ -5,6 +5,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import NavBar from './components/NavBar/NavBar';
 import Cart from './components/Cart/Cart';
+import Form from './components/Form/Form';
 import { CartContexProvider } from './context/CartContext';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path='/marca/:marcaId' element={<ItemListContainer/>}/>
             <Route path='/detail/:productId' element={<ItemDetailContainer/>}/>
             <Route path='/cart' element= {<Cart/>}/>
+            <Route path='/form' element={<Form/>}/>
           </Routes>
         </BrowserRouter>
       </CartContexProvider>

@@ -1,0 +1,97 @@
+
+/* .inputName{grid-area: inputName;}
+.inputTelefono{grid-area: inputTelefono;}
+.submitForm{grid-area: submitForm;}
+.inputEmail{grid-area: inputEmail;}
+
+Form{
+    width: 30%;
+    height: 90px;
+    margin: 30px;
+    margin-left: 25%; 
+    align-items: center;
+    display: grid;
+    grid-template:  "inputName"
+                    "inputTelefono"
+                    "inputEmail"
+                    "submitForm";
+}  */
+
+
+/* .submitForm{
+    background: #ec5990;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+.submitForm:hover{
+    background: #f02871;
+    color: white;
+} */
+
+
+
+.inputName{
+    background-color: #20232a;
+    border-color: #61dafb;
+    color: #61dafb;
+    
+    margin-left: 5%;
+    width: 90%;
+    height: 40px;
+    margin-top: 30px;
+    
+    border-radius: 10px;
+    border-width: 1px;
+    text-align: center;
+}
+.inputTelefono{
+    background-color: #20232a;
+    border-color: #61dafb;
+    color: #61dafb;
+    
+    margin-left: 5%;
+    width: 90%;
+    height: 40px;
+    
+    border-radius: 10px;
+    border-width: 1px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.inputEmail{
+    background-color: #20232a;
+    border-color: #61dafb;
+    color: #61dafb;
+   
+    margin-left: 5%;
+    width: 90%;
+    height: 40px;
+    
+    border-radius: 10px;
+    border-width: 1px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* .submitForm{display: none;} */
+
+.tituloForm{
+    color: #61dafb;
+    font-family: Google Sans Display,Sans-Serif;
+    text-align: center;
+    margin: 10px;
+}
+
+.spanAlert{
+    color: white;
+    font-size: 18px;
+    margin-left: 5%;
+}

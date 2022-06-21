@@ -6,8 +6,9 @@
 
 
 .cardCarrito{
-    width: 70%;
-    margin: 30px;
+    /* width: 70%; */
+    height: 190px;
+    margin-top: 30px;
     align-items: center;
     display: grid;
     grid-template:  "cardTitulo button"

@@ -3,19 +3,22 @@
 .buttonGenerarOrden{grid-area: buttonGenerarOrden;}
 
 .tarjetaTotal{
-    width: 70%;
-    height: 90px;
-    margin: 30px;
+    /* width: 70%;
+    height: 90px; */
+    padding: 5px;
+    margin-top: 30px;
     align-items: center;
     display: grid;
-    grid-template:  "total buttonClearCart"
-                    "total buttonGenerarOrden"/
-                    80% 20%;
+    grid-template:  "cardForm"
+                    "total" 
+                    "buttonClearCart" 
+                    "buttonGenerarOrden";
 }
 
 .total{
     text-align: center;
     font-size: 40px;
+    color: white;
 }
 
 
@@ -25,4 +28,44 @@
     text-align: center;
     width: 50%;
 
+}
+
+
+.tarjetaCartItem{grid-area: tarjetaCartItem;}
+.tarjetaTotal{grid-area: tarjetaTotal;}
+.cart{
+    display: grid;
+    grid-template:  "tarjetaCartItem tarjetaTotal"/
+                        70% 30%;
+}
+
+.tarjetaTotal{
+    height: 600px;
+    background-color: #20232a;
+}
+
+.buttonClearCart{
+    background-color: #ffc340;
+    margin-left: 5%;
+    width: 90%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+.buttonClearCart:hover{
+    background-color: #ffae00;
+}
+.buttonGenerarOrden{
+    background-color: #0087bc;
+    margin-left: 5%;
+    width: 90%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.buttonGenerarOrden:hover{
+    background-color: #015170;
 }
