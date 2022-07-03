@@ -19,6 +19,7 @@ npm start
 Ver ['.env.example'](https://github.com/Darwinaly/CoderHouse-React-JS-PCommerce/blob/main/.env.example) para ejemplo
 
 Se debe crear un archivo .env
+
 En este archivo deberán asignarle a las variables la información de la base de datos creada en Firestore para que el proyecto quede enlazado con su base de datos personal.
 
 ## Estructura de base de datos en Firebase
