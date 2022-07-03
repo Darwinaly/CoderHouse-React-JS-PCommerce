@@ -22,6 +22,8 @@ Se debe crear un archivo .env
 
 En este archivo deberán asignarle a las variables la información de la base de datos creada en Firestore para que el proyecto quede enlazado con su base de datos personal.
 
+Luego deben ignorar ese archivo para protegerlo. 
+
 ## Estructura de base de datos en Firebase
 
 - Debemos crear una colección o array llamada "products"
