@@ -16,7 +16,7 @@ npm start
 
 ## Variables de Entorno
 
-Ver ['.env.example'](https://github.com/Darwinaly/CoderHouse-React-JS-PCommerce.git/main/.env.example) para ejemplo
+Ver ['.env.example'](https://github.com/Darwinaly/CoderHouse-React-JS-PCommerce/blob/main/.env.example) para ejemplo
 
 Se debe crear un archivo .env 
 En este archivo deberán asignarle a las variables la informacion de la base de datos creada en Firestore para que el proyecto quede enlazado con su base de datos personal. 
