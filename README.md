@@ -5,10 +5,10 @@ Este es un proyecto realizado para el tercer modulo del curso Full Stack Develop
 
 ## Para Iniciar Localmente
 
-$ git clone https://github.com/Darwinaly/CoderHouse-React-JS-PCommerce.git
-$ cd PCommerce
-$ npm install
-$ npm start
+git clone https://github.com/Darwinaly/CoderHouse-React-JS-PCommerce.git
+cd PCommerce
+npm install
+npm start
 
 
 ## Variables de Entorno
