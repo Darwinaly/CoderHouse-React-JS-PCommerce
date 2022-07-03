@@ -1,13 +1,16 @@
 # Proyecto Ecommerce CoderHouse
 
-Este es un proyecto realizado para el tercer modulo del curso Full Stack Developer de Coder House. Utilizando los conocimentos brindados en la clase, se ira perfeccionando el desarrollo de un Ecommerce funcional con una base de datos alojada en Firebase.  
+Este es un proyecto realizado para el tercer módulo del curso Full Stack Developer de Coder House. Utilizando los conocimientos brindados en la clase, se irá perfeccionando el desarrollo de un Ecommerce funcional con una base de datos alojada en Firebase.
 
 
 ## Para Iniciar Localmente
 
 git clone https://github.com/Darwinaly/CoderHouse-React-JS-PCommerce.git
+
 cd PCommerce
+
 npm install
+
 npm start
 
 
