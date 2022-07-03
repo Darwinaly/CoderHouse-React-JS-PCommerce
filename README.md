@@ -31,20 +31,20 @@ Deben tener en cuenta que el proyecto fue creado con las siguientes categorías:
 
 ## Navegabilidad del sitio
 
--Al acceder al sitio se hace un map de los productos renderizando la imagen, el título y el precio de cada uno.
--La barra de navegación solo tiene las categorías de los productos donde nos permite acceder a la categoría específica si así lo deseamos. También renderiza el -carrito, pero únicamente cuando se agregan productos.
+- Al acceder al sitio se hace un map de los productos renderizando la imagen, el título y el precio de cada uno.
+- La barra de navegación solo tiene las categorías de los productos donde nos permite acceder a la categoría específica si así lo deseamos. También renderiza el -carrito, pero únicamente cuando se agregan productos.
 
--Al ver más información del producto, accedemos al detalle donde vemos imagen, descripción, título, precio y contador de items.
--El contador está limitado por el stock y si no hay stock alerta de ello y no permite agregar productos al carrito.
--Una vez se selecciona la cantidad, se agrega al carrito y se renderiza un botón de finalizar compra y el carrito en la barra de navegación.
--Si damos clic en finalizar compra o en el carrito accedemos al Cart donde vemos los items agregados y la orden de compra.
+- Al ver más información del producto, accedemos al detalle donde vemos imagen, descripción, título, precio y contador de items.
+- El contador está limitado por el stock y si no hay stock alerta de ello y no permite agregar productos al carrito.
+- Una vez se selecciona la cantidad, se agrega al carrito y se renderiza un botón de finalizar compra y el carrito en la barra de navegación.
+- Si damos clic en finalizar compra o en el carrito accedemos al Cart donde vemos los items agregados y la orden de compra.
 
--Los items agregados muestran el nombre del producto, la cantidad de items agregados, el precio unitario, y el subtotal.
--La orden de compra muestra el precio total, el form, datos de contacto y los botones de limpiar carrito y generar orden de compra.
--El botón de generar orden de compra no se renderiza hasta que el usuario cargue los datos personales o de contacto en el form.
+- Los items agregados muestran el nombre del producto, la cantidad de items agregados, el precio unitario, y el subtotal.
+- La orden de compra muestra el precio total, el form, datos de contacto y los botones de limpiar carrito y generar orden de compra.
+- El botón de generar orden de compra no se renderiza hasta que el usuario cargue los datos personales o de contacto en el form.
 
--Una vez le damos clic en "Generar Orden" se crea una OC con los datos del contacto, el detalle de todos los productos y el precio total. Esta OC quedará contemplada en la base de datos de Firestore con una colección llamada "orders"
--Cuando se genera esta OC también son descontados del stock de cada producto los que fueron sumados en la OC.
+- Una vez le damos clic en "Generar Orden" se crea una OC con los datos del contacto, el detalle de todos los productos y el precio total. Esta OC quedará contemplada en la base de datos de Firestore con una colección llamada "orders"
+- Cuando se genera esta OC también son descontados del stock de cada producto los que fueron sumados en la OC.
 
 ## Para ver el proyecto Online
 
