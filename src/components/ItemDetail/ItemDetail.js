@@ -31,7 +31,3 @@ const ItemDetail = ({id, name, price, img, stock, description}) => {
 }
 
 export default ItemDetail
-
-// {getProduct(id)?.quantity}
-
-// initial={quantity}

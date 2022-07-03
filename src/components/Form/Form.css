@@ -1,42 +1,4 @@
 
-/* .inputName{grid-area: inputName;}
-.inputTelefono{grid-area: inputTelefono;}
-.submitForm{grid-area: submitForm;}
-.inputEmail{grid-area: inputEmail;}
-
-Form{
-    width: 30%;
-    height: 90px;
-    margin: 30px;
-    margin-left: 25%; 
-    align-items: center;
-    display: grid;
-    grid-template:  "inputName"
-                    "inputTelefono"
-                    "inputEmail"
-                    "submitForm";
-}  */
-
-
-/* .submitForm{
-    background: #ec5990;
-    color: white;
-    text-transform: uppercase;
-    border: none;
-    margin-top: 40px;
-    padding: 20px;
-    font-size: 16px;
-    font-weight: 100;
-    letter-spacing: 10px;
-}
-
-.submitForm:hover{
-    background: #f02871;
-    color: white;
-} */
-
-
-
 .inputName{
     background-color: #20232a;
     border-color: #61dafb;
@@ -51,6 +13,7 @@ Form{
     border-width: 1px;
     text-align: center;
 }
+
 .inputTelefono{
     background-color: #20232a;
     border-color: #61dafb;
@@ -81,7 +44,6 @@ Form{
     text-align: center;
 }
 
-/* .submitForm{display: none;} */
 
 .tituloForm{
     color: #61dafb;
@@ -90,8 +52,51 @@ Form{
     margin: 10px;
 }
 
+.datosFormH1{
+    color: #61dafb;
+    font-family: Google Sans Display,Sans-Serif;
+    margin-left: 40px;
+    font-size: 30px;
+}
+
 .spanAlert{
     color: white;
-    font-size: 18px;
+    font-size: 12px;
     margin-left: 5%;
 }
+
+.datosForm{
+    font-family: Google Sans Display,Sans-Serif;
+    text-align: left;
+    color: #61dafb;
+}
+.datosFormH2{
+    color: white;
+    font-family: Google Sans Display,Sans-Serif;
+    margin-left: 40px;
+    font-size: 20px;
+}
+.datosFormH3{
+    color: white;
+    font-family: Google Sans Display,Sans-Serif;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+
+.submitForm{
+    box-shadow: 0px 0px 4px 4px #61dafb;
+    background-color:#20232a;
+    color: white;
+    border-radius: 10px;
+    width: 50%;
+    border: none;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+
+.submitForm:hover{
+    background-color: #61dafb;
+    color: #20232a;
+}
+

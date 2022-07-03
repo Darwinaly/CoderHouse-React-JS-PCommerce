@@ -3,8 +3,6 @@
 .buttonGenerarOrden{grid-area: buttonGenerarOrden;}
 
 .tarjetaTotal{
-    /* width: 70%;
-    height: 90px; */
     padding: 5px;
     margin-top: 30px;
     align-items: center;
@@ -69,3 +67,11 @@
 .buttonGenerarOrden:hover{
     background-color: #015170;
 }
+
+.buyerAlert{
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+

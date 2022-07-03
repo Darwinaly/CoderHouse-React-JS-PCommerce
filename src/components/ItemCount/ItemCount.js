@@ -17,18 +17,21 @@ const ItemCount = ({stock = 0, initial = 1, onAdd}) => {
 
 
     return(
-        <div className="itemCount" id="itemCount">
+        <>
+        {stock === 0
+        ?<p className="sinStock">Sin stock</p>
+        :<div className="itemCount" id="itemCount">
             <div className="itemCountButtons" id="itemCountButtons">
                 <button onClick={handlerSubtract} className="handlerSubtract" id="handlerSubtract">-</button>
                 <div className="count" id="count">{quantity}</div>
                 <button onClick={handlerAdd} className="handlerAdd" id="handlerAdd">+</button>
             </div> 
             <button onClick={() => onAdd(quantity)} type="button" className="btn btn-outline-primary">Agregar al carrito</button>
-        </div>
+         </div>}
+        </>
     );
 
 }
 
 export default ItemCount
 
-// quantity estaba abrazado por la etiqueta span anteriormente

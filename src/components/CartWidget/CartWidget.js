@@ -18,5 +18,3 @@ const CartWidget = () => {
 }
 
 export default CartWidget;
-
-//       <button type="button" className="btn btn-dark"><img src={logo} alt="add to cart"/> {quantity} </button>
